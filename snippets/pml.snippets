@@ -3,46 +3,29 @@ snippet chapter
 	<!DOCTYPE chapter SYSTEM "local/xml/markup.dtd">
 	<chapter id="chp.${1:`substitute(Filename('', 'ChapterId'), '^.', '\u&', '')`}">
 		<title>${2}</title>
-
-		<p>
-
-			${3}
-
+		<p>${3}
 		</p>
-
 	</chapter>
 snippet ref
 	<ref linkend="${1}"/>
 snippet sec
 	<sect${1:1}>
 		<title>${2}</title>
-		<p>
-
-			${3}
-
+		<p>${3}
 		</p>
 	</sect$1>
 snippet seci
 	<sect${1:1} id="${2}">
 		<title>${3}</title>
-		<p>
-
-			${4}
-
+		<p>${3}
 		</p>
 	</sect$1>
 snippet p
-	<p>
-
-		${1}
-
+	<p>${1}
 	</p>
 snippet footnote
 	<footnote>
-		<p>
-
-			${1}
-
+		<p>${1}
 		</p>
 	</footnote>
 snippet epigraph
@@ -54,36 +37,24 @@ snippet epigraph
 	</epigraph>
 snippet bq
 	<blockquote>
-		<p>
-
-			${1}
-
+		<p>${1}
 		</p>
 	</blockquote>
 snippet sb
 	<sidebar id="sb.${1}">
 		<title>${2}</title>
-		<p>
-
-			${3}
-
+		<p>${3}
 		</p>
 	</sidebar>
 snippet joe
 	<joeasks>
 		<title>${1}</title>
-		<p>
-
-			${2}
-
+		<p>${2}
 		</p>
 	</joeasks>
 snippet hl
 	<highlight>
-		<p>
-
-			${1}
-
+		<p>${1}
 		</p>
 	</higlight>
 snippet img
@@ -149,3 +120,7 @@ snippet li
 			${1}
 		</p>
 	</li>
+snippet ref
+	<ref linkend="fig.${1}" />
+snippet q
+	&lquot;${1}&rquot;
